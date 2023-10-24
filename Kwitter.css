@@ -1,0 +1,15 @@
+body {
+    height: 100%;
+    margin: 0;
+    background-image: linear-gradient(to right,  #ff9d00, rgb(244, 224, 8), rgb(27, 181, 208), rgb(9, 112, 239));
+}
+
+#loginButton {
+    width: 80%;border-radius: 15px;
+}
+
+#appWeb {
+    color: rgb(12, 80, 237);
+    font-size: 75px;
+    margin: 60px;
+}
