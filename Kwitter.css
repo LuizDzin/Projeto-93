@@ -1,7 +1,8 @@
 body {
     height: 100%;
     margin: 0;
-    background-image: linear-gradient(to right,  #ff9d00, rgb(244, 224, 8), rgb(27, 181, 208), rgb(9, 112, 239));
+    background-image: linear-gradient(to right, #ff9d00, #d18710,  #acbd18,  #dada0f,
+      #cb9c1b,  #e4990e,  #e4550d,  #ff2b06 )
 }
 
 #loginButton {
@@ -12,4 +13,17 @@ body {
     color: rgb(12, 80, 237);
     font-size: 75px;
     margin: 60px;
+}
+.header
+{
+	color: white;font-family: 'Yeon Sung';font-size: 45px;letter-spacing: 10px;margin-top: 80px;
+}
+.header img
+{
+	width: 80px;
+    margin-left: -15px;
+}
+.logo
+{
+	width: 80px;margin-top: 30px;border-radius: 40px;
 }
