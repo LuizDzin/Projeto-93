@@ -16,6 +16,10 @@ document.getElementById("userName").innerHTML = "Bem-vindo(a) " + userName + "!"
 
 function addRoom() {
     room_name = document.getElementById("room_name").value;
+
+    firebase.database().ref("/").child(room_name).update({
+      purpose : "adding room name"
+    });
 }
 
 function getData() {firebase.database().ref("/").on('value',
@@ -33,4 +37,11 @@ function redirectToRoomName(name) {
   console.log(name);
   localStorage.setItem("room_name", name);
   window.location = "kwitterRoom.html";
+}
+
+function logout() {
+  localStorage.removeItem("logIn");
+  localStorage.removeItem("room_name");
+
+  window.location = "Kwitter.html";
 }
